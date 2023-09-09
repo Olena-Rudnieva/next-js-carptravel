@@ -10,7 +10,7 @@ export default function Hero() {
           </span>
         </h2>
 
-        <h1 className="text-[40px] md:text-[67px] xl:text-[98px] md:w-[426px] xl:w-[646px] md:h-[243px] xl:h-[357px] text-white font-thin leading-[56px] md:leading-[80px] xl:leading-[123px] tracking-[-1.6px] md:tracking-[-2.68px]  xl:tracking-[-3.92px] uppercase pt-28 md:pt-0 mb-6 md:mb-[58px]">
+        <h1 className="text-[40px] md:text-[67px] xl:text-[98px] md:w-[426px] xl:w-[646px] md:h-[243px] xl:h-[357px] text-white font-thin leading-[56px] md:leading-[80px] xl:leading-[123px] tracking-[-1.6px] md:tracking-[-2.68px]  xl:tracking-[-3.92px] uppercase pt-28 md:pt-0 mb-6 md:mb-[58px] xl:mb-[148px]">
           <span className="font-medium">Uncover </span>Carpathian’s Secrets
         </h1>
         <p className=" text-white w-[157px] md:w-[263px] xl:w-full text-[10px] md:text-sm xl:text-base	font-extralight leading-4 mb-6 md:mb-0 md:tracking-[1.26px] xl:tracking-[1.44px]">
