@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Logo from '../../public/logo.png';
-import Link from 'next/link';
+
 import { useState } from 'react';
 import MobileMenu from './MobileMenu';
 
@@ -11,7 +11,7 @@ export default function AppBar() {
   const toggleMenu = () => setMobileMenu(!mobileMenu);
 
   return (
-    <header className="pb-9 md:pb-16">
+    <header className="pb-9 md:pb-16 xl:pb-[72px]">
       <nav class="flex justify-between items-center ">
         <div>
           <Image src={Logo} width={61} height={33} alt="Logo" />
@@ -28,31 +28,31 @@ export default function AppBar() {
             <MobileMenu onClick={toggleMenu} />
           </div>
         )}
-        <ul className="hidden md:flex gap-6 text-white">
+        <ul className="hidden md:flex gap-6 xl:gap-14 text-white">
           <li>
-            <Link className="text-sm font-normal tracking-[1.4px]" href="#">
+            <a className="text-sm font-normal tracking-[1.4px]" href="#">
               About
-            </Link>
+            </a>
           </li>
           <li>
-            <Link className="text-sm font-normal tracking-[1.4px]" href="#">
+            <a className="text-sm font-normal tracking-[1.4px]" href="#">
               Services
-            </Link>
+            </a>
           </li>
           <li>
-            <Link className="text-sm font-normal tracking-[1.4px]" href="#">
+            <a className="text-sm font-normal tracking-[1.4px]" href="#">
               Career
-            </Link>
+            </a>
           </li>
           <li>
-            <Link className="text-sm font-normal tracking-[1.4px]" href="#">
+            <a className="text-sm font-normal tracking-[1.4px]" href="#">
               Gallery
-            </Link>
+            </a>
           </li>
           <li>
-            <Link className="text-sm font-normal tracking-[1.4px]" href="#">
+            <a className="text-sm font-normal tracking-[1.4px]" href="#">
               Contacts
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>

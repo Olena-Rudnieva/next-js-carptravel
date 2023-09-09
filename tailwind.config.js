@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         main: 'url(../public/main.png)',
+        mainDesktop: 'url(../public/main-desktop.png)',
         aboutMobile: 'url(../public/about-mobile.png)',
         aboutTablet: 'url(../public/about-tablet.png)',
         offer1: 'url(../public/offer1.png)',

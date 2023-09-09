@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import About from './About';
 
 export default function MobileMenu({ onClick }) {
   return (
@@ -16,44 +16,36 @@ export default function MobileMenu({ onClick }) {
         <nav>
           <ul className="flex flex-col gap-12  text-center pt-[170px]">
             <li>
-              <Link
-                className="text-[18px] font-normal tracking-[1.8px]"
-                href="#"
-              >
+              <a className="text-[18px] font-normal tracking-[1.8px]" href="#">
                 About
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                className="text-[18px] font-normal tracking-[1.8px]"
-                href="#"
-              >
+              <a className="text-[18px] font-normal tracking-[1.8px]" href="#">
                 Services
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                className="text-[18px] font-normal tracking-[1.8px]"
-                href="#"
-              >
+              <a className="text-[18px] font-normal tracking-[1.8px]" href="#">
                 Career
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                className="text-[18px] font-normal tracking-[1.8px]"
-                href="#"
-              >
+              <a className="text-[18px] font-normal tracking-[1.8px]" href="#">
                 Gallery
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 className="text-[18px] font-normal tracking-[1.8px]"
-                href="#"
+                to={About}
+                smooth={true}
+                duration={500}
+                offset={50}
+                onClick={onClick}
               >
                 Contacts
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>

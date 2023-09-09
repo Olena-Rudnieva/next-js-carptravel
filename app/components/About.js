@@ -1,6 +1,9 @@
 export default function About() {
   return (
-    <section className="relative bg-aboutMobile bg-cover bg-right bg-middle md:bg-aboutTablet md:bg-center px-5 md:px-8 py-14 md:py-16 text-white">
+    <section
+      id="About"
+      className="relative bg-aboutMobile bg-cover bg-right bg-middle md:bg-aboutTablet md:bg-center px-5 md:px-8 py-14 md:py-16 text-white"
+    >
       <div className="md:flex md:gap-[76px]">
         <h2 className="text-[40px] md:text-[67px] font-thin leading-[56px] tracking-[-1.6px] md:tracking-[-2.68px] uppercase mb-2 md:mb-0">
           WHO <span className="font-medium">WE ARE</span>
