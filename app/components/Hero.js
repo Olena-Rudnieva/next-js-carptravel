@@ -13,7 +13,7 @@ export default function Hero() {
         <h1 className="text-[40px] md:text-[67px] md:w-[426px] md:h-[243px] text-white font-thin leading-[56px] md:leading-[80px] tracking-[-1.6px] md:tracking-[-2.68px] uppercase pt-28 md:pt-0 mb-6 md:mb-[58px]">
           <span className="font-medium">Uncover </span>Carpathian’s Secrets
         </h1>
-        <p className="text-white w-[157px] md:w-[263px] text-[10px] md:text-sm font-extralight leading-4 mb-6 md:mb-0 md:tracking-[1.26px]">
+        <p className=" text-white w-[157px] md:w-[263px] text-[10px] md:text-sm font-extralight leading-4 mb-6 md:mb-0 md:tracking-[1.26px]">
           Hoverla / Yaremche / Zakarpattia / Vorokhta / Synevyr Lake / Bukovel
         </p>
       </div>
@@ -24,7 +24,7 @@ export default function Hero() {
           Carpathians. Enjoy stunning views, exciting expeditions, and the best
           service!
         </p>
-        <div className="flex justify-center items-center bg-white bg-opacity-10 md:bg-white md:bg-opacity-5 px-[64px] py-[18px] md:py-[14px] w-[280px] md:w-[230px] md:h-[50px] ">
+        <div className="flex justify-center items-center  ml-auto mr-auto bg-white bg-opacity-10 md:bg-white md:bg-opacity-5 px-[64px] py-[18px] md:py-[14px] w-[280px] md:w-[230px] md:h-[50px] ">
           <button
             type="button"
             className="text-white text-lg font-bold leading-[48px]"

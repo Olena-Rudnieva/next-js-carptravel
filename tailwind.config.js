@@ -8,15 +8,16 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        // 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        // 'gradient-conic':
-        //   'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         main: 'url(../public/main.png)',
         aboutMobile: 'url(../public/about-mobile.png)',
+        aboutTablet: 'url(../public/about-tablet.png)',
         offer1: 'url(../public/offer1.png)',
         chooseMobile: 'url(../public/choose-mobile.png)',
         gallery: 'url(../public/gallery-bg.png)',
         contact: 'url(../public/contact.png)',
+      },
+      backgroundColor: {
+        menu: 'rgba(1, 10, 5, 0.95)',
       },
     },
   },
