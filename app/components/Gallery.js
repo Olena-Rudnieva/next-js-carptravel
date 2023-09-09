@@ -9,9 +9,28 @@ export default function Gallery() {
       <h2 className="text-[40px] font-thin leading-[56px] tracking-[-1.6px] uppercase mb-6">
         OUR <span className="font-medium">GALLERY</span>
       </h2>
-      <Image src={img1} width={280} height={187} alt="Photo" className="mb-6" />
-      <Image src={img2} width={280} height={187} alt="Photo" className="mb-6" />
-      <Image src={img3} width={280} height={187} alt="Photo" />
+
+      <Image
+        src={img1}
+        width={280}
+        height={187}
+        alt="Photo"
+        className="mb-6 ml-auto mr-auto"
+      />
+      <Image
+        src={img2}
+        width={280}
+        height={187}
+        alt="Photo"
+        className="mb-6 ml-auto mr-auto"
+      />
+      <Image
+        src={img3}
+        width={280}
+        height={187}
+        alt="Photo"
+        className="ml-auto mr-auto"
+      />
     </section>
   );
 }
