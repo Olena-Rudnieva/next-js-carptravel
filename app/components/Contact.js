@@ -1,6 +1,8 @@
+import ContactForm from './ContactForm';
+
 export default function Contact() {
   return (
-    <section class="px-5 py-14 bg-main bg-cover text-white">
+    <section class="px-5 py-14 bg-contact bg-center bg-cover text-white">
       <h2 class="text-[40px] font-thin leading-[56px] tracking-[-1.6px] uppercase mb-9">
         Contact <span class="font-medium">US</span>
       </h2>
@@ -34,17 +36,15 @@ export default function Contact() {
         </div>
       </div>
 
-      <div class="flex justify-end">
-        <p class="text-xs font-extralight leading-5 ml-5 mr-[46px]">
-          Follow us
-        </p>
+      <div class="flex justify-end mb-3">
+        <p class="text-xs font-extralight leading-5 mr-5">Follow us</p>
         <ul>
           <li>
             <a
               href="https://www.facebook.com/"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              class="text-sm font-normal leading-6"
+              class="text-sm font-normal leading-6 hover:underline"
             >
               facebook
             </a>
@@ -54,7 +54,7 @@ export default function Contact() {
               href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              class="text-sm font-normal leading-6 mr-[15px]"
+              class="text-sm font-normal leading-6 mr-[15px] hover:underline"
             >
               instagram
             </a>
@@ -64,7 +64,7 @@ export default function Contact() {
               href="https://www.youtube.com/"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              class="text-sm font-normal leading-6"
+              class="text-sm font-normal leading-6 hover:underline"
             >
               youtube
             </a>
@@ -74,13 +74,14 @@ export default function Contact() {
               href="https://www.tiktok.com/"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              class="text-sm font-normal leading-6"
+              class="text-sm font-normal leading-6 hover:underline"
             >
               tiktok
             </a>
           </li>
         </ul>
       </div>
+      <ContactForm />
     </section>
   );
 }
