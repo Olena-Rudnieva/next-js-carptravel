@@ -1,7 +1,7 @@
 export default function ChooseForm() {
   const wordWithApostrof = "Don't";
   return (
-    <div className="bg-chooseMobile bg-center bg-cover px-5 py-14 text-white">
+    <div className="bg-chooseMobile bg-center bg-cover px-5 py-14 text-white h-[826px] ">
       <div className="flex justify-end">
         <p className="text-sm font-extralight leading-5 w-[179px] mb-6">
           {wordWithApostrof} miss your opportunity! Fill out the form right now

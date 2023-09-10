@@ -5,7 +5,7 @@ import img3 from '../../public/gallery-2.png';
 
 export default function Gallery() {
   return (
-    <section className="px-5 py-14 bg-gallery bg-cover text-white">
+    <section className="px-5 py-14 bg-gallery bg-cover text-white h-[801px] md:h-[575px] xl:h-[788px]">
       <h2 className="text-[40px] font-thin leading-[56px] tracking-[-1.6px] uppercase mb-6">
         OUR <span className="font-medium">GALLERY</span>
       </h2>
