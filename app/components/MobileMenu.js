@@ -1,11 +1,9 @@
 'use client';
 
-import About from './About';
-
 export default function MobileMenu({ onClick }) {
   return (
-    <div className="fixed top-0 left-0 z-20 w-screen h-screen bg-menu ">
-      <div className="relative z-30 text-white h-full  max-w-[480px]">
+    <div className="fixed top-0 left-0 z-20 w-screen h-screen bg-menu max-w-[480px] ">
+      <div className="relative z-30 text-white h-full  ">
         <button
           type="button"
           onClick={onClick}
@@ -16,33 +14,46 @@ export default function MobileMenu({ onClick }) {
         <nav>
           <ul className="flex flex-col gap-12  text-center pt-[170px]">
             <li>
-              <a className="text-[18px] font-normal tracking-[1.8px]" href="#">
+              <a
+                onClick={onClick}
+                className="text-[18px] font-normal tracking-[1.8px]"
+              >
                 About
-              </a>
-            </li>
-            <li>
-              <a className="text-[18px] font-normal tracking-[1.8px]" href="#">
-                Services
-              </a>
-            </li>
-            <li>
-              <a className="text-[18px] font-normal tracking-[1.8px]" href="#">
-                Career
-              </a>
-            </li>
-            <li>
-              <a className="text-[18px] font-normal tracking-[1.8px]" href="#">
-                Gallery
               </a>
             </li>
             <li>
               <a
                 className="text-[18px] font-normal tracking-[1.8px]"
-                to={About}
-                smooth={true}
-                duration={500}
-                offset={50}
                 onClick={onClick}
+              >
+                Services
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-[18px] font-normal tracking-[1.8px]"
+                onClick={onClick}
+              >
+                Career
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-[18px] font-normal tracking-[1.8px]"
+                onClick={onClick}
+              >
+                Gallery
+              </a>
+            </li>
+            <li>
+              <a
+                className="text-[18px] font-normal tracking-[1.8px] "
+                onClick={onClick}
+                // to={About}
+                // smooth={true}
+                // duration={500}
+                // offset={50}
+                // onClick={onClick}
               >
                 Contacts
               </a>

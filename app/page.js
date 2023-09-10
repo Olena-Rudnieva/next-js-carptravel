@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import MainPage from './components/MainPage';
 import About from './components/About';
 import Offer from './components/Offer';

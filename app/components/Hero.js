@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <div className="relative md:flex">
       <div>
-        <h2 className="absolute top-0 right-0 xl:top-[40px] xl:right-0 flex flex-wrap justify-end w-[118px] md:w-[247px] xl:w-[306px] h-[52px] md:h-[88px] xl:h-[123px] text-4xl md:text-[67px] xl:text-[98px] font-thin tracking-[1.665px] md:tracking-[8.71px] xl:tracking-normal  text-white">
+        <h2 className="absolute top-0 right-0 md:top-[18px] xl:top-[40px] xl:right-0 flex flex-wrap justify-end w-[118px] md:w-[247px] xl:w-[306px] h-[52px] md:h-[88px] xl:h-[123px] text-4xl md:text-[67px] xl:text-[98px] font-thin tracking-[1.665px] md:tracking-[8.71px] xl:tracking-normal  text-white">
           <span className="font-medium text-white tracking-0">7</span>
           DAYS
           <span className="text-xs md:text-sm xl:text-[16px] font-light tracking-[9.48px] md:tracking-[24.9px] xl:tracking-[31.48px] uppercase text-white ">
