@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section
-      id="About"
+      id="about"
       className="relative bg-aboutMobile md:bg-aboutTablet xl:bg-aboutDesktop bg-cover bg-right bg-middle md:bg-center py-14 md:py-16 xl:pt-[120px] xl:pb-[104px] text-white h-[873px] md:h-[697px] xl:h-[824px]"
     >
       <div className="container">

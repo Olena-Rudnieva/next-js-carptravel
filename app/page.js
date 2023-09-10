@@ -1,19 +1,19 @@
 import MainPage from './components/MainPage';
 import About from './components/About';
-import Offer from './components/Offer';
 import Choose from './components/Choose';
 import Gallery from './components/Gallery';
-import Contact from './components/Contact';
+import Services from './components/Services';
+import Contacts from './components/Contacts';
 
 export default function Home() {
   return (
     <>
       <MainPage />
       <About />
-      <Offer />
+      <Services />
       {/* <Choose /> */}
       <Gallery />
-      <Contact />
+      <Contacts />
     </>
   );
 }

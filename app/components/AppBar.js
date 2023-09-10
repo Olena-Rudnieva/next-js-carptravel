@@ -30,27 +30,42 @@ export default function AppBar() {
         )}
         <ul className="hidden md:flex gap-6 xl:gap-14 text-white">
           <li>
-            <a className="text-sm font-normal tracking-[1.4px]" href="#">
+            <a
+              className="text-sm font-normal tracking-[1.4px] hover:underline"
+              href="#about"
+            >
               About
             </a>
           </li>
           <li>
-            <a className="text-sm font-normal tracking-[1.4px]" href="#">
+            <a
+              className="text-sm font-normal tracking-[1.4px] hover:underline"
+              href="#services"
+            >
               Services
             </a>
           </li>
           <li>
-            <a className="text-sm font-normal tracking-[1.4px]" href="#">
+            <a
+              className="text-sm font-normal tracking-[1.4px] hover:underline"
+              href="#"
+            >
               Career
             </a>
           </li>
           <li>
-            <a className="text-sm font-normal tracking-[1.4px]" href="#">
+            <a
+              className="text-sm font-normal tracking-[1.4px] hover:underline"
+              href="#gallery"
+            >
               Gallery
             </a>
           </li>
           <li>
-            <a className="text-sm font-normal tracking-[1.4px]" href="#">
+            <a
+              className="text-sm font-normal tracking-[1.4px] hover:underline"
+              href="#contacts"
+            >
               Contacts
             </a>
           </li>

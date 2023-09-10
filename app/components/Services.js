@@ -1,8 +1,12 @@
 import Image from 'next/image';
 import offerImg1 from '../../public/offer1-img.jpg';
-export default function Offer() {
+
+export default function Services() {
   return (
-    <section className="relative bg-offer1 bg-cover bg-right text-white py-14 md:py-16 xl:py-[104px] h-[851px] md:h-[621px] xl:h-[779px]">
+    <section
+      id="services"
+      className="relative bg-offer1 bg-cover bg-right text-white py-14 md:py-16 xl:py-[104px] h-[851px] md:h-[621px] xl:h-[779px]"
+    >
       <div className="container ">
         <div className="md:flex md:gap-[170px] xl:gap-[162px]">
           <h2 className="text-[40px] md:text-[67px] xl:text-[98px] font-thin leading-[56px] md:leading-[78px] xl:leading-[119px] tracking-[-1.6px] md:tracking-[-2.68px] xl:tracking-[-3.92px] uppercase mb-6 md:mb-9 xl:mb-[23px]">
