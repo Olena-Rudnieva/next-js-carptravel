@@ -12,6 +12,7 @@ module.exports = {
         mainDesktop: 'url(../public/main-desktop.png)',
         aboutMobile: 'url(../public/about-mobile.png)',
         aboutTablet: 'url(../public/about-tablet.png)',
+        aboutDesktop: 'url(../public/about-desktop.png)',
         offer1: 'url(../public/offer1.png)',
         chooseMobile: 'url(../public/choose-mobile.png)',
         gallery: 'url(../public/gallery-bg.png)',

@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section
       id="About"
-      className="relative bg-aboutMobile bg-cover bg-right bg-middle md:bg-aboutTablet md:bg-center px-5 md:px-8 py-14 md:py-16 xl:px-[104px] xl:pt-[120px] xl:pb-[104px] text-white h-[873px] md:h-[697px] xl:h-[824px]"
+      className="relative bg-aboutMobile md:bg-aboutTablet xl:bg-aboutDesktop bg-cover bg-right bg-middle md:bg-center px-5 md:px-8 py-14 md:py-16 xl:px-[104px] xl:pt-[120px] xl:pb-[104px] text-white h-[873px] md:h-[697px] xl:h-[824px]"
     >
       <div className="md:flex md:gap-[76px] xl:gap-6">
         <h2 className="text-[40px] md:text-[67px] xl:text-[98px] font-thin leading-[56px] xl:leading-[77px] tracking-[-1.6px] md:tracking-[-2.68px] xl:tracking-[-3.92px] uppercase mb-2 md:mb-0">

@@ -19,17 +19,17 @@ export default function Offer() {
         />
 
         <div>
-          <p className="text-xs font-extralight leading-6 tracking-[2.4px] text-right mb-6 md:absolute md:top-[379px] md:right-[60px]">
+          <p className="text-xs font-extralight leading-6 tracking-[2.4px] text-right mb-6 md:absolute md:top-[379px] md:right-[60px] xl:top-[239px] xl:right-[209px]">
             Feel the adrenaline rush
           </p>
-          <ul className="text-xl md:text-[22px] xl:text-[28px] font-extralight leading-[17px] md:leading-[18px] xl:leading-[24px] uppercase text-white text-opacity-50 mb-[83px] md:max-w-[220px] xl:max-w-[250px]">
-            <li className="mb-4">ATVs Traveling</li>
-            <li className="mb-4">Rock climbing</li>
-            <li className="mb-4">Hot air ballooning</li>
-            <li className="mb-4">Skydiving</li>
+          <ul className="text-xl md:text-[22px] xl:text-[28px] font-extralight leading-[17px] md:leading-[18px] xl:leading-[24px] uppercase text-white text-opacity-50 mb-[83px] xl:mb-[23px]  md:max-w-[220px] xl:max-w-[250px]">
+            <li className="mb-4 xl:mb-6">ATVs Traveling</li>
+            <li className="mb-4 xl:mb-6">Rock climbing</li>
+            <li className="mb-4 xl:mb-6">Hot air ballooning</li>
+            <li className="mb-4 xl:mb-6">Skydiving</li>
             <li className="">Rafting</li>
           </ul>
-          <p className="text-sm md:text-[13px] font-extralight leading-5">
+          <p className="text-sm md:text-[13px] xl:text-[18px] xl:absolute xl:bottom-[104px] xl:right-[104px] font-extralight leading-5 xl:leading-6 xl:w-[293px] xl:text-justify">
             Join exciting rafting expeditions on the waterways of the
             Carpathians. Go through challenging waterways and overcome gusty
             waves, feel the adrenaline, and enjoy the incredible views of the
