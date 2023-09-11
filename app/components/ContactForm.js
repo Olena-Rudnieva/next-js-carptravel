@@ -3,7 +3,7 @@ export default function ContactForm() {
     <form className="form ">
       <div className="md:flex md:justify-between xl:flex-col mb-4 xl:mb-6">
         <div className="xl:flex xl:gap-5">
-          <div className="mb-6 md:mb-4 xl:mb-5 md:flex md:flex-col  ">
+          <div className="mb-6 md:mb-4 xl:mb-5 flex flex-col  ">
             <label
               htmlFor="name"
               className="text-xs font-extralight leading-6 tracking-[2.4px] xl:mb-[6px]"
@@ -21,7 +21,7 @@ export default function ContactForm() {
               //   pattern="[a-zA-Zа-яА-ЯїЇ]+"
             />
           </div>
-          <div className="mb-6 md:mb-4 md:flex md:flex-col">
+          <div className="mb-6 md:mb-4 flex flex-col">
             <label
               htmlFor="mail"
               className="text-xs font-extralight leading-6 tracking-[2.4px] xl:mb-[6px]"
@@ -38,7 +38,7 @@ export default function ContactForm() {
             />
           </div>
         </div>
-        <div className="md:flex md:flex-col ">
+        <div className="flex flex-col ">
           <label
             htmlFor="text"
             className="text-xs font-extralight leading-6 tracking-[2.4px] xl:mb-1"

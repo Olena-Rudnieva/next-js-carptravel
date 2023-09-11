@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Logo from '../../public/logo.png';
+import { Link } from 'react-scroll/modules';
 
 import { useState } from 'react';
 import MobileMenu from './MobileMenu';
@@ -30,44 +31,50 @@ export default function AppBar() {
         )}
         <ul className="hidden md:flex gap-6 xl:gap-14 text-white">
           <li>
-            <a
+            <Link
               className="text-sm font-normal tracking-[1.4px] hover:underline"
-              href="#about"
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
             >
               About
-            </a>
+            </Link>
           </li>
+
           <li>
-            <a
+            <Link
               className="text-sm font-normal tracking-[1.4px] hover:underline"
-              href="#services"
+              to="services"
+              spy={true}
+              smooth={true}
+              duration={500}
             >
               Services
-            </a>
+            </Link>
           </li>
+
           <li>
-            <a
+            <Link
               className="text-sm font-normal tracking-[1.4px] hover:underline"
-              href="#"
-            >
-              Career
-            </a>
-          </li>
-          <li>
-            <a
-              className="text-sm font-normal tracking-[1.4px] hover:underline"
-              href="#gallery"
+              to="gallery"
+              spy={true}
+              smooth={true}
+              duration={500}
             >
               Gallery
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="text-sm font-normal tracking-[1.4px] hover:underline"
-              href="#contacts"
+              to="contacts"
+              spy={true}
+              smooth={true}
+              duration={500}
             >
               Contacts
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

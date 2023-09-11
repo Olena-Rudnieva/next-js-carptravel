@@ -8,6 +8,9 @@ export default function MainButton() {
         className=" text-white text-lg xl:text-[32px] font-bold leading-[48px]"
       >
         JOIN NOW
+        {/* <Link to={contacts} smooth={true} duration={500} offset={50}>
+          JOIN NOW
+        </Link> */}
         {/* <Link to={Contacts} smooth={true} duration={500} offset={50}>
               JOIN NOW
             </Link> */}
