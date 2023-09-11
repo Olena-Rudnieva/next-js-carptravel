@@ -51,7 +51,7 @@ export default function Contacts() {
             </div>
 
             <div className="flex justify-end md:justify-start mb-3 md:mb-16 xl:mb-0 xl:justify-end xl:text-right xl:mr-[101px]">
-              <p className="text-xs font-extralight leading-5 mr-5 xl:mr-0 xl:absolute xl:left-[398px]">
+              <p className="text-xs font-extralight leading-5 mr-5 xl:mr-0 xl:absolute xl:left-[416px]">
                 Follow us
               </p>
               <ul>
@@ -63,6 +63,14 @@ export default function Contacts() {
                     className="text-sm md:text-base font-normal leading-6 hover:underline"
                   >
                     facebook
+                  </a>
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="text-sm md:text-base font-normal leading-6 hover:underline"
+                  >
+                    test
                   </a>
                 </li>
                 <li>

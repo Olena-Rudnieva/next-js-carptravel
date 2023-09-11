@@ -29,7 +29,7 @@ export default function AppBar() {
             <MobileMenu onClick={toggleMenu} />
           </div>
         )}
-        <ul className="hidden md:flex gap-6 xl:gap-14 text-white">
+        <ul className="hidden md:flex gap-6 xl:gap-14 text-white cursor-pointer">
           <li>
             <Link
               className="text-sm font-normal tracking-[1.4px] hover:underline"

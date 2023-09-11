@@ -49,3 +49,7 @@ body {
     padding-right: 24px;
   }
 }
+
+.scroll {
+  scroll-behavior: smooth;
+}

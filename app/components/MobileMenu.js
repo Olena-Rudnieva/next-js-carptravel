@@ -1,5 +1,7 @@
 'use client';
 
+import { Link } from 'react-scroll/modules';
+
 export default function MobileMenu({ onClick }) {
   return (
     <div className="fixed top-0 left-0 z-20 w-screen h-screen bg-menu max-w-[480px] ">
@@ -12,51 +14,56 @@ export default function MobileMenu({ onClick }) {
           CLOSE
         </button>
         <nav>
-          <ul className="flex flex-col gap-12  text-center pt-[170px]">
+          <ul className="flex flex-col gap-12  text-center pt-[170px] cursor-pointer">
             <li>
-              <a
+              <Link
                 onClick={onClick}
                 className="text-[18px] font-normal tracking-[1.8px]"
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={500}
               >
                 About
-              </a>
+              </Link>
             </li>
+
             <li>
-              <a
-                className="text-[18px] font-normal tracking-[1.8px]"
+              <Link
                 onClick={onClick}
+                className="text-[18px] font-normal tracking-[1.8px]"
+                to="services"
+                spy={true}
+                smooth={true}
+                duration={500}
               >
                 Services
-              </a>
+              </Link>
             </li>
+
             <li>
-              <a
-                className="text-[18px] font-normal tracking-[1.8px]"
+              <Link
                 onClick={onClick}
-              >
-                Career
-              </a>
-            </li>
-            <li>
-              <a
                 className="text-[18px] font-normal tracking-[1.8px]"
-                onClick={onClick}
+                to="gallery"
+                spy={true}
+                smooth={true}
+                duration={500}
               >
                 Gallery
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                className="text-[18px] font-normal tracking-[1.8px] "
+              <Link
                 onClick={onClick}
-                // to={About}
-                // smooth={true}
-                // duration={500}
-                // offset={50}
-                // onClick={onClick}
+                className="text-[18px] font-normal tracking-[1.8px]"
+                to="contacts"
+                spy={true}
+                smooth={true}
+                duration={500}
               >
                 Contacts
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

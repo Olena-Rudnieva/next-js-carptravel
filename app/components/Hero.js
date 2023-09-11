@@ -1,4 +1,7 @@
-import MainButton from "./MainButton";
+'use client';
+
+import { Link } from 'react-scroll/modules';
+import MainButton from './MainButton';
 
 export default function Hero() {
   return (
@@ -26,7 +29,9 @@ export default function Hero() {
           Carpathians. Enjoy stunning views, exciting expeditions, and the best
           service!
         </p>
-        <MainButton/>
+        <Link to="contacts" spy={true} smooth={true} duration={500}>
+          <MainButton />
+        </Link>
       </div>
     </div>
   );
