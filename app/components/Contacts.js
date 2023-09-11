@@ -11,10 +11,10 @@ export default function Contacts() {
           Contact <span class="font-medium">US</span>
         </h2>
         <div className="xl:flex xl:gap-[231px]">
-          <div className="md:flex md:gap-[90px] xl:block">
+          <div className="md:flex md:gap-[90px] xl:gap-[0]  xl:flex-col xl:justify-between  ">
             <div>
               <div className="flex justify-end md:justify-start mb-6">
-                <ul className="md:ml-16 xl:ml-[141px] ">
+                <ul className="md:ml-16 xl:ml-[117px]  ">
                   <li>
                     <a
                       className="text-sm md:text-base font-normal leading-6"
@@ -37,9 +37,9 @@ export default function Contacts() {
                 </p>
               </div>
 
-              <div className="flex justify-end md:justify-start mb-[24px]">
+              <div className="flex justify-end md:justify-start mb-[24px] xl:mb-0 xl:ml-[83px] ">
                 <a
-                  className="text-sm md:text-base font-normal leading-6 md:ml-[34px] xl:ml-[107px]"
+                  className="text-sm md:text-base font-normal leading-6 md:ml-[34px] xl:ml-0 "
                   href="mailto:info@devstudio.com"
                 >
                   support@carptravel.com
@@ -50,8 +50,8 @@ export default function Contacts() {
               </div>
             </div>
 
-            <div className="flex justify-end md:justify-start mb-3 md:mb-16">
-              <p className="text-xs font-extralight leading-5 mr-5">
+            <div className="flex justify-end md:justify-start mb-3 md:mb-16 xl:mb-0 xl:justify-end xl:text-right xl:mr-[101px]">
+              <p className="text-xs font-extralight leading-5 mr-5 xl:mr-0 xl:absolute xl:left-[398px]">
                 Follow us
               </p>
               <ul>
@@ -70,7 +70,7 @@ export default function Contacts() {
                     href="https://www.instagram.com/"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
-                    className="text-sm md:text-base font-normal leading-6 mr-[15px] hover:underline"
+                    className="text-sm md:text-base font-normal leading-6 mr-[15px] md:mr-0 hover:underline"
                   >
                     instagram
                   </a>
