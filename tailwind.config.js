@@ -13,7 +13,7 @@ module.exports = {
         aboutMobile: 'url(../public/about-mobile.png)',
         aboutTablet: 'url(../public/about-tablet.png)',
         aboutDesktop: 'url(../public/about-desktop.png)',
-        offer1: 'url(../public/offer1.png)',
+        services: 'url(../public/services-bg.png)',
         chooseMobile: 'url(../public/choose-mobile.png)',
         gallery: 'url(../public/gallery-bg.png)',
         contact: 'url(../public/contact.png)',

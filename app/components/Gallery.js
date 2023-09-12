@@ -33,7 +33,7 @@ export default function Gallery() {
       id="gallery"
       className="py-14 md:py-16 xl:py-20 md:text-center bg-gallery bg-cover text-white h-[801px] md:h-[575px] xl:h-[788px]"
     >
-      <div className="container">
+      <div className="container ">
         <h2 className="text-[40px] md:text-[67px] font-thin leading-[56px] md:leading-[81px] tracking-[-1.6px]  md:tracking-[-2.68px]  uppercase mb-6 md:mb-[72px]">
           OUR <span className="font-medium">GALLERY</span>
         </h2>
@@ -50,7 +50,7 @@ export default function Gallery() {
           ))}
         </ul>
 
-        <div>
+        <div className="hidden md:block">
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
             spaceBetween={24}
@@ -80,16 +80,16 @@ export default function Gallery() {
             <button
               type="button"
               ref={goPrev}
-              className="text-[33px] font-thin uppercase leading-[40px]"
+              className="  text-[33px] font-thin uppercase leading-[40px] "
             >
-              Back
+              <p className="absolute left-10 bottom-0">Back</p>
             </button>
             <button
               type="button"
-              className="absolute right-0 bottom-0 text-[33px] font-thin uppercase leading-[40px]"
+              className="text-[33px] font-thin uppercase leading-[40px]"
               ref={goNext}
             >
-              Next
+              <p className="absolute right-10 bottom-0">Next</p>
             </button>
           </Swiper>
         </div>

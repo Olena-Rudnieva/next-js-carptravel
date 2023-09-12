@@ -1,38 +1,45 @@
+'use client';
+
+import { useForm } from 'react-hook-form';
+import FormIcon from './FormIcon';
+
 export default function ContactForm() {
+  const form = useForm();
+  const { register } = form;
+
   return (
     <form className="form ">
       <div className="md:flex md:justify-between xl:flex-col mb-4 xl:mb-6">
         <div className="xl:flex xl:gap-5">
           <div className="mb-6 md:mb-4 xl:mb-5 flex flex-col  ">
             <label
-              htmlFor="name"
-              className="text-xs font-extralight leading-6 tracking-[2.4px] xl:mb-[6px]"
+              htmlFor="username"
+              className="text-xs xl:text-xl font-extralight leading-6 tracking-[2.4px] xl:mb-[6px]"
             >
               Full name
             </label>
             <input
-              id="name"
-              name="user-name"
               type="text"
-              required
+              id="username"
+              {...register('username')}
               placeholder="John Smith"
               className="w-[280px] md:w-[221px] xl:w-[293px] text-[13px] xl:text-xl font-extralight leading-6 bg-white bg-opacity-5 px-2"
-              //   minlength="2"
-              //   pattern="[a-zA-Zа-яА-ЯїЇ]+"
             />
+          </div>
+          <div>
+            <FormIcon />
           </div>
           <div className="mb-6 md:mb-4 flex flex-col">
             <label
-              htmlFor="mail"
-              className="text-xs font-extralight leading-6 tracking-[2.4px] xl:mb-[6px]"
+              htmlFor="email"
+              className="text-xs xl:text-xl font-extralight leading-6 tracking-[2.4px] xl:mb-[6px]"
             >
               E-mail
             </label>
             <input
-              id="mail"
-              name="user-email"
               type="email"
-              required
+              id="email"
+              {...register('email')}
               placeholder="johnsmith@email.com"
               className="w-[280px] md:w-[221px] xl:w-[293px] text-[13px] xl:text-xl font-extralight leading-6 bg-white bg-opacity-5 px-2"
             />
@@ -41,7 +48,7 @@ export default function ContactForm() {
         <div className="flex flex-col ">
           <label
             htmlFor="text"
-            className="text-xs font-extralight leading-6 tracking-[2.4px] xl:mb-1"
+            className="text-xs xl:text-xl font-extralight leading-6 tracking-[2.4px] xl:mb-1"
           >
             Message
           </label>
