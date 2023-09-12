@@ -12,12 +12,10 @@ import {
   A11y,
   Autoplay,
 } from 'swiper/modules';
-import { Controller } from 'swiper/modules';
-import React, { useState } from 'react';
-import { Thumbs } from 'swiper/modules';
+
+import React, { useState, useRef } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/autoplay';
 
 const galleryData = [
   { id: 1, src: img1, title: 'Picturesque mountains' },
@@ -26,6 +24,10 @@ const galleryData = [
 ];
 
 export default function Gallery() {
+  const goPrev = useRef(null);
+  const goNext = useRef(null);
+  const [_, setInit] = useState();
+
   return (
     <section
       id="gallery"
@@ -53,7 +55,11 @@ export default function Gallery() {
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
             spaceBetween={24}
             slidesPerView={1}
-            // navigation={true}
+            navigation={{
+              prevEl: goPrev.current,
+              nextEl: goNext.current,
+            }}
+            onInit={() => setInit(true)}
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,
@@ -71,6 +77,20 @@ export default function Gallery() {
                 </div>
               </SwiperSlide>
             ))}
+            <button
+              type="button"
+              ref={goPrev}
+              className="text-[33px] font-thin uppercase leading-[40px]"
+            >
+              Back
+            </button>
+            <button
+              type="button"
+              className="absolute right-0 bottom-0 text-[33px] font-thin uppercase leading-[40px]"
+              ref={goNext}
+            >
+              Next
+            </button>
           </Swiper>
         </div>
       </div>
