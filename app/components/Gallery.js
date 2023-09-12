@@ -86,7 +86,7 @@ export default function Gallery() {
             </button>
             <button
               type="button"
-              className="text-[33px] font-thin uppercase leading-[40px]"
+              className="text-[33px] font-thin uppercase leading-[40px] "
               ref={goNext}
             >
               <p className="absolute right-10 bottom-0">Next</p>

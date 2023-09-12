@@ -5,10 +5,15 @@ import FormIcon from './FormIcon';
 
 export default function ContactForm() {
   const form = useForm();
-  const { register } = form;
+  const { register, handleSubmit, formState } = form;
+  const { errors } = formState;
+
+  const onSubmit = (data) => {
+    console.log('Form submitted', data);
+  };
 
   return (
-    <form className="form ">
+    <form className="form " onSubmit={handleSubmit(onSubmit)} noValidate>
       <div className="md:flex md:justify-between xl:flex-col mb-4 xl:mb-6">
         <div className="xl:flex xl:gap-5">
           <div className="mb-6 md:mb-4 xl:mb-5 flex flex-col  ">
@@ -21,15 +26,24 @@ export default function ContactForm() {
             <input
               type="text"
               id="username"
-              {...register('username')}
+              {...register('username', {
+                required: {
+                  value: true,
+                  message: 'Incorrect name',
+                },
+              })}
               placeholder="John Smith"
               className="w-[280px] md:w-[221px] xl:w-[293px] text-[13px] xl:text-xl font-extralight leading-6 bg-white bg-opacity-5 px-2"
             />
+            {errors.username && (
+              <p className="text-[#FF5757] text-xs font-extralight leading-6 tracking-[2.4px] text-right flex justify-end items-center">
+                <FormIcon />
+                {errors.username.message}
+              </p>
+            )}
           </div>
-          <div>
-            <FormIcon />
-          </div>
-          <div className="mb-6 md:mb-4 flex flex-col">
+
+          <div className="mb-3 md:mb-4 flex flex-col">
             <label
               htmlFor="email"
               className="text-xs xl:text-xl font-extralight leading-6 tracking-[2.4px] xl:mb-[6px]"
@@ -39,10 +53,21 @@ export default function ContactForm() {
             <input
               type="email"
               id="email"
-              {...register('email')}
+              {...register('email', {
+                required: {
+                  value: true,
+                  message: 'Invalid email',
+                },
+              })}
               placeholder="johnsmith@email.com"
               className="w-[280px] md:w-[221px] xl:w-[293px] text-[13px] xl:text-xl font-extralight leading-6 bg-white bg-opacity-5 px-2"
             />
+            {errors.email && (
+              <p className="text-[#FF5757] text-xs font-extralight leading-6 tracking-[2.4px] text-right flex justify-end items-center">
+                <FormIcon />
+                {errors.email.message}
+              </p>
+            )}
           </div>
         </div>
         <div className="flex flex-col ">
