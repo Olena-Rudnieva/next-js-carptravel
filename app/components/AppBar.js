@@ -15,7 +15,7 @@ export default function AppBar() {
     <header className="pb-9 md:pb-16 xl:pb-[72px]">
       <nav class="flex justify-between items-center ">
         <div>
-          <Image src={Logo} width={61} height={33} alt="Logo" />
+          <Image src={Logo} width={61} height={35} alt="Logo" />
         </div>
         <button
           type="button"

@@ -1,7 +1,29 @@
+'use client';
+
 import Image from 'next/image';
 import img1 from '../../public/gallery-3.png';
 import img2 from '../../public/gallery-1.png';
 import img3 from '../../public/gallery-2.png';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from 'swiper/modules';
+import { Controller } from 'swiper/modules';
+import React, { useState } from 'react';
+import { Thumbs } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/autoplay';
+
+const galleryData = [
+  { id: 1, src: img1, title: 'Picturesque mountains' },
+  { id: 2, src: img2, title: 'Mountain lake' },
+  { id: 3, src: img3, title: 'Сottage in the forest' },
+];
 
 export default function Gallery() {
   return (
@@ -14,27 +36,43 @@ export default function Gallery() {
           OUR <span className="font-medium">GALLERY</span>
         </h2>
 
-        <Image
-          src={img1}
-          width={280}
-          height={187}
-          alt="Photo"
-          className="mb-6 ml-auto mr-auto"
-        />
-        {/* <Image
-            src={img2}
-            width={280}
-            height={187}
-            alt="Photo"
-            className="mb-6 ml-auto mr-auto"
-          />
-          <Image
-            src={img3}
-            width={280}
-            height={187}
-            alt="Photo"
-            className="ml-auto mr-auto"
-          /> */}
+        <ul className="flex flex-col gap-5 md:hidden">
+          {galleryData.map((picture) => (
+            <li key={picture.id}>
+              <Image
+                className="w-[280px] h-[187px] mx-auto"
+                src={picture.src}
+                alt={picture.title}
+              />
+            </li>
+          ))}
+        </ul>
+
+        <div>
+          <Swiper
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+            spaceBetween={24}
+            slidesPerView={1}
+            // navigation={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+          >
+            {galleryData.map((picture) => (
+              <SwiperSlide key={picture.id}>
+                <div>
+                  <Image
+                    src={picture.src}
+                    alt={picture.title}
+                    className="md:w-[415px] md:h-[294px] xl:w-[606px] xl:h-[429px] md:mx-auto"
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </section>
   );

@@ -1,6 +1,5 @@
 'use client';
 
-import { Link } from 'react-scroll/modules';
 import MainButton from './MainButton';
 
 export default function Hero() {
@@ -28,10 +27,8 @@ export default function Hero() {
           We offer you unforgettable trips to the most beautiful parts of the
           Carpathians. Enjoy stunning views, exciting expeditions, and the best
           service!
-        </p>
-        <Link to="contacts" spy={true} smooth={true} duration={500}>
-          <MainButton />
-        </Link>
+        </p>      
+        <MainButton />
       </div>
     </div>
   );
