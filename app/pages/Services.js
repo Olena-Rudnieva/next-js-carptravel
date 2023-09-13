@@ -6,6 +6,8 @@ import img3 from '../../public/service3-img.jpg';
 import img4 from '../../public/service4-img.jpg';
 import img5 from '../../public/service5-img.jpg';
 import ServiceCard from '../components/ServiceCard';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 const servicesData = [
   {
@@ -46,7 +48,7 @@ const servicesData = [
     callText: 'Trust the flow',
     description:
       'Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains.',
-    image: img5,
+    photo: img5,
   },
 ];
 
@@ -54,12 +56,21 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="relative bg-services bg-cover bg-right text-white py-14 md:py-16 xl:py-[104px] h-[851px] md:h-[621px] xl:h-[779px]"
+      className=" bg-services bg-cover bg-right text-white py-14 md:py-16 xl:py-[104px] h-[851px] md:h-[621px] xl:h-[779px]"
     >
       <div className="container ">
-        {/* {servicesData.map((card) => {
-          return <ServiceCard key={card.number} card={card} />;
-        })} */}
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={1}
+          onSlideChange={() => console.log('slide change')}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
+          {servicesData.map((service) => (
+            <SwiperSlide key={service.number}>
+              <ServiceCard service={service} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );
