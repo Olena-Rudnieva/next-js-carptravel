@@ -105,7 +105,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .swiper-pagination {
     width: 254px !important;
     top: 136px !important;
