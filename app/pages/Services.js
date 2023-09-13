@@ -5,7 +5,7 @@ import img2 from '../../public/service2-img.jpg';
 import img3 from '../../public/service3-img.jpg';
 import img4 from '../../public/service4-img.jpg';
 import img5 from '../../public/service5-img.jpg';
-import ServiceCard from './ServiceCard';
+import ServiceCard from '../components/ServiceCard';
 
 const servicesData = [
   {

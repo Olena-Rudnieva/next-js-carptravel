@@ -1,4 +1,4 @@
-export default function ChooseForm() {
+export default function CareerForm() {
   const wordWithApostrof = "Don't";
   return (
     <div className="bg-chooseMobile bg-center bg-cover px-5 py-14 text-white h-[826px] ">

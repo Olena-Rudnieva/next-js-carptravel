@@ -1,5 +1,5 @@
-import AppBar from './AppBar';
-import Hero from './Hero';
+import AppBar from '../components/AppBar';
+import Hero from '../components/Hero';
 
 export default function MainPage() {
   return (
