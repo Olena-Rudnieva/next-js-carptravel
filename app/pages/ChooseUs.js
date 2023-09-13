@@ -1,6 +1,6 @@
 export default function ChooseUs() {
   return (
-    <div className="bg-chooseMobile bg-center bg-cover px-5 py-14 text-white h-[800px] ">
+    <div className="bg-careerMobile bg-center bg-cover px-5 py-14 text-white h-[800px] ">
       <h2 className="text-[40px] font-thin leading-[56px] tracking-[-1.6px] uppercase mb-6">
         Choose <span className="font-medium">Us</span>
       </h2>

@@ -1,9 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import img1 from '../../public/gallery-3.png';
-import img2 from '../../public/gallery-1.png';
-import img3 from '../../public/gallery-2.png';
+import img1 from '../../public/gallery/gallery3.jpg';
+import img2 from '../../public/gallery/gallery1.jpg';
+import img3 from '../../public/gallery/gallery2.jpg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {
   Navigation,

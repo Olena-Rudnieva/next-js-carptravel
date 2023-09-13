@@ -8,15 +8,13 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        main: 'url(../public/main.png)',
-        mainDesktop: 'url(../public/main-desktop.png)',
-        aboutMobile: 'url(../public/about-mobile.png)',
-        aboutTablet: 'url(../public/about-tablet.png)',
-        aboutDesktop: 'url(../public/about-desktop.png)',
-        services: 'url(../public/services-bg.png)',
-        chooseMobile: 'url(../public/choose-mobile.png)',
-        gallery: 'url(../public/gallery-bg.png)',
-        contact: 'url(../public/contact.png)',
+        main: 'url(../public/main/main.jpg)',
+        mainDesktop: 'url(../public/main/main-desktop.jpg)',
+        about: 'url(../public/about/about-bg.jpg)',
+        services: 'url(../public/services/services-bg.jpg)',
+        careerMobile: 'url(../public/career/career-mobile.jpg)',
+        gallery: 'url(../public/gallery/gallery-bg.jpg)',
+        contacts: 'url(../public/contacts/contacts-bg.jpg)',
       },
       backgroundColor: {
         menu: 'rgba(1, 10, 5, 0.95)',
