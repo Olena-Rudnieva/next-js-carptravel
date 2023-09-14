@@ -10,7 +10,9 @@ module.exports = {
       backgroundImage: {
         main: 'url(../public/main/main.jpg)',
         mainDesktop: 'url(../public/main/main-desktop.jpg)',
-        about: 'url(../public/about/about-bg.jpg)',
+        aboutMobile: 'url(../public/about/about-mobile.jpg)',
+        aboutTablet: 'url(../public/about/about-tablet.jpg)',
+        aboutDesktop: 'url(../public/about/about-desktop.jpg)',
         services: 'url(../public/services/services-bg.jpg)',
         careerMobile: 'url(../public/career/career-mobile.jpg)',
         gallery: 'url(../public/gallery/gallery-bg.jpg)',
