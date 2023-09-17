@@ -23,6 +23,7 @@ export default function AppBar() {
               height={33}
               alt="Logo"
               className="h-[33px]"
+              priority
             />
           </Link>
           <button
