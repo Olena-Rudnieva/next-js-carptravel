@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import './globals.css';
 import { Inter } from 'next/font/google';
+import AppBar from './components/AppBar';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -12,7 +13,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <Head>
+        <meta property="og:image" content="/logo.png" />
+        <meta
+          property="og:url"
+          content="https://next-js-carptravel.vercel.app/"
+        />
+      </Head>
+      <body className={inter.className}>
+        <AppBar />
+        {children}
+      </body>
     </html>
   );
 }

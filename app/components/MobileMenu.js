@@ -9,7 +9,7 @@ export default function MobileMenu({ onClick }) {
         <button
           type="button"
           onClick={onClick}
-          class="absolute right-[20px] top-[43px] text-[14px] font-normal tracking-[1,4px] uppercase"
+          className="absolute right-[20px] top-[43px] text-[14px] font-normal tracking-[1,4px] uppercase"
         >
           CLOSE
         </button>

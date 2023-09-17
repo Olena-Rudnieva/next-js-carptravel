@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
       backgroundImage: {
         main: 'url(../public/main/main.jpg)',
         mainDesktop: 'url(../public/main/main-desktop.jpg)',

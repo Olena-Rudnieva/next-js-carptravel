@@ -8,7 +8,7 @@ export default function Contacts() {
     >
       <div className="container">
         <h2 className="text-[40px] md:text-[67px] xl:text-[98px] font-thin leading-[56px] md:leading-[66px] xl:leading-[119px] tracking-[-1.6px] md:tracking-[-2.68px] xl:tracking-[-3.92px] uppercase mb-9 md:mb-10 xl:mb-[74px]">
-          Contact <span class="font-medium">US</span>
+          Contact <span className="font-medium">US</span>
         </h2>
         <div className="xl:flex xl:gap-[231px]">
           <div className="md:flex md:gap-[90px] xl:gap-[0]  xl:flex-col xl:justify-between  ">

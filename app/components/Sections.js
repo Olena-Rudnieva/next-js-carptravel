@@ -1,17 +1,18 @@
 import About from '../pages/About';
 import Contacts from '../pages/Contacts';
 import Gallery from '../pages/Gallery';
-import MainPage from '../pages/MainPage';
+// import MainPage from '../pages/MainPage';
 import Services from '../pages/Services';
+import Hero from './Hero';
 
 export default function Sections() {
   return (
-    <>
-      <MainPage />
+    <main className="absolute top-0 left-0 right-0">
+      <Hero />
       <About />
       <Services />
       <Gallery />
       <Contacts />
-    </>
+    </main>
   );
 }

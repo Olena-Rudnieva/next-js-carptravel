@@ -70,8 +70,8 @@ export default function Services() {
           <Swiper
             spaceBetween={50}
             slidesPerView={1}
-            onSlideChange={() => console.log('change')}
-            onSwiper={(swiper) => console.log(swiper)}
+            // onSlideChange={() => console.log('change')}
+            // onSwiper={(swiper) => console.log(swiper)}
             scrollbar={{ draggable: true }}
             modules={[Pagination, A11y, EffectFade]}
             loop={true}
@@ -82,7 +82,7 @@ export default function Services() {
               clickable: true,
               renderBullet: function (index, className) {
                 return (
-                  '<div class="' +
+                  '<div className="' +
                   className +
                   '">' +
                   servicesList[index] +
