@@ -1,8 +1,8 @@
-import img1 from '../../public/services/service1-img.jpg';
-import img2 from '../../public/services/service2-img.jpg';
-import img3 from '../../public/services/service3-img.jpg';
-import img4 from '../../public/services/service4-img.jpg';
-import img5 from '../../public/services/service5-img.jpg';
+import img1 from '../public/services/service1-img.jpg';
+import img2 from '../public/services/service2-img.jpg';
+import img3 from '../public/services/service3-img.jpg';
+import img4 from '../public/services/service4-img.jpg';
+import img5 from '../public/services/service5-img.jpg';
 
 export const servicesData = [
   {
