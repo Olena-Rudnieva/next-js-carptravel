@@ -1,4 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CarpTravel
+
+This is a travel agency landing page that offers unforgettable trips to the Carpathians.
+
+## About project
+
+With the help of this site, CarpTravel company provides information about its services and offers, communicates with clients through the contact form, and introduces its activities in general.
+
+## Technologies used:
+
+- Next.js
+- Tailwind CSS
+- Libraries: swiper, react-scroll, react-hook-form
+
+## Live page
+
+The live page can be accessed through the following link: https://next-js-carptravel.vercel.app/
 
 ## Getting Started
 
