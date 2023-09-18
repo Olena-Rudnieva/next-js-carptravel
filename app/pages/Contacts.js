@@ -64,14 +64,6 @@ export default function Contacts() {
                   >
                     facebook
                   </a>
-                  <a
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    className="text-sm md:text-base font-normal leading-6 hover:underline"
-                  >
-                    test
-                  </a>
                 </li>
                 <li>
                   <a

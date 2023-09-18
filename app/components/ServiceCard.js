@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import PropTypes from 'prop-types';
 
 export default function ServiceCard({ service }) {
   return (
@@ -34,3 +35,13 @@ export default function ServiceCard({ service }) {
     </div>
   );
 }
+
+ServiceCard.propTypes = {
+  service: PropTypes.shape({
+    number: PropTypes.string.isRequired,
+    listItem: PropTypes.string.isRequired,
+    callText: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    photo: PropTypes.object.isRequired,
+  }).isRequired,
+};
