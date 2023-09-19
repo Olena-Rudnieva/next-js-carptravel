@@ -50,9 +50,22 @@ body {
   }
 }
 
-.scroll {
-  scroll-behavior: smooth;
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease;
+}
+
+/* .scroll {
+  scroll-behavior: smooth;
+} */
 
 .swiper-pagination {
   width: 188px !important;

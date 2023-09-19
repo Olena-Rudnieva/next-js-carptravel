@@ -1,10 +1,10 @@
 'use client';
 
-import MainButton from './MainButton';
+import MainButton from '../components/MainButton';
 
 export default function Hero() {
   return (
-    <section className=" pt-[105px] md:pt-[121px] xl:pt-[130px] pb-[56px] md:pb-16 xl:pb-[104px] bg-main bg-cover bg-no-repeat md:bg-center xl:bg-mainDesktop h-[642px] md:h-[530px] lg:h-[763px]">
+    <section className=" pt-[105px] md:pt-[121px] xl:pt-[130px] pb-[56px] md:pb-16 xl:pb-[104px] bg-main bg-cover bg-no-repeat md:bg-center xl:bg-mainDesktop h-[642px] md:h-[530px] xl:h-[763px]">
       <div className="container">
         <div className="relative md:flex">
           <div>

@@ -16,7 +16,10 @@ export default function AppBar() {
     <header className="relative z-50 pt-9 md:pt-6 pb-9 md:pb-16 xl:pb-[72px] ">
       <div className="container">
         <nav className="flex justify-between items-center ">
-          <Link href="/">
+          <Link
+            href="/"
+            className="text-white focus:outline-none  focus:border-b transition-all duration-300 ease-linear"
+          >
             <Image
               src={Logo}
               width={61}

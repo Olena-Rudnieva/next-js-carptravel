@@ -27,23 +27,25 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="md:absolute md:top-[449px] md:left-[32px] xl:top-[646px]  xl:right-[104px]">
-          <h3 className="text-sm md:text-[16px] xl:text-[18px] font-normal leading-5 xl:leading-6 uppercase text-right mr-10 md:mr-[58px] xl:mr-[120px]">
-            From vacationers
-          </h3>
-          <h3 className="text-sm md:text-[16px] xl:text-[18px] font-normal leading-5 xl:leading-6 uppercase text-right">
-            to active travelers
-          </h3>
-          <p className="text-sm md:text-[16px] xl:text-[18px] font-extralight leading-5 xl:leading-6 tracking-[-0.14px] md:tracking-[0.32px] xl:tracking-[2.16px] text-right mb-10 md:mb-0">
-            we have a tour for everyone.
+        <div className="relative">
+          <div className="md:absolute md:bottom-[124px] xl:bottom-0 xl:right-0 ">
+            <h3 className="text-sm md:text-[16px] xl:text-[18px] font-normal leading-5 xl:leading-6 uppercase text-right mr-10 md:mr-[58px] xl:mr-[120px]">
+              From vacationers
+            </h3>
+            <h3 className="text-sm md:text-[16px] xl:text-[18px] font-normal leading-5 xl:leading-6 uppercase text-right">
+              to active travelers
+            </h3>
+            <p className="text-sm md:text-[16px] xl:text-[18px] font-extralight leading-5 xl:leading-6 tracking-[-0.14px] md:tracking-[0.32px] xl:tracking-[2.16px] text-right mb-10 md:mb-0">
+              we have a tour for everyone.
+            </p>
+          </div>
+          <p className="text-sm md:text-[16px] xl:text-[18px] font-extralight leading-5 xl:leading-6 md:w-[463px] xl:w-[605px] md:ml-auto xl:ml-0 xl:mr-auto">
+            <span className="font-normal">We use methods </span>that are
+            time-tested and proven. Our expert guides with in-depth knowledge of
+            the Carpathian landscapes lead you safely through the mysteries of
+            these mountains.
           </p>
         </div>
-        <p className="text-sm md:text-[16px] xl:text-[18px] font-extralight leading-5 xl:leading-6 md:w-[463px] xl:w-[605px] md:ml-auto xl:ml-0 xl:mr-auto">
-          <span className="font-normal">We use methods </span>that are
-          time-tested and proven. Our expert guides with in-depth knowledge of
-          the Carpathian landscapes lead you safely through the mysteries of
-          these mountains.
-        </p>
       </div>
     </section>
   );
