@@ -10,7 +10,7 @@ With the help of this site, CarpTravel company provides information about its se
 
 - Next.js
 - Tailwind CSS
-- Libraries: swiper, react-scroll, react-hook-form
+- Libraries: swiper, react-scroll, react-hook-form, react-hot-toast
 
 ## Live page
 

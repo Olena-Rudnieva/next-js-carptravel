@@ -2,13 +2,17 @@
 
 import { useForm } from 'react-hook-form';
 import FormIcon from './FormIcon';
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function ContactForm() {
   const form = useForm();
-  const { register, handleSubmit, formState } = form;
+  const { register, handleSubmit, reset, formState } = form;
+
   const { errors } = formState;
 
   const onSubmit = (data) => {
+    reset();
+    toast('Thank you! Your message was sent.');
     console.log('Form submitted', data);
   };
 
@@ -91,6 +95,7 @@ export default function ContactForm() {
       >
         Send
       </button>
+      <Toaster />
     </form>
   );
 }

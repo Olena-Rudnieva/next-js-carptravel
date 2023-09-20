@@ -21,9 +21,6 @@ module.exports = {
         gallery: 'url(../public/gallery/gallery-bg.jpg)',
         contacts: 'url(../public/contacts/contacts-bg.jpg)',
       },
-      backgroundColor: {
-        menu: 'rgba(1, 10, 5, 0.95)',
-      },
     },
   },
 

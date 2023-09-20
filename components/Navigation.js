@@ -7,7 +7,7 @@ export default function Navigation() {
       {links.map((link) => (
         <li key={link.id}>
           <Link
-            tabindex="0"
+            tabIndex="0"
             className="text-sm font-normal tracking-[1.4px] hover:underline focus:shadow-xl focus:outline-none focus:underline transition-all duration-300 ease-linear"
             to={link.path}
             spy={true}

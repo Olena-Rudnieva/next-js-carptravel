@@ -6,7 +6,7 @@ import { BottomLeft, BottomRight, TopLeft, TopRight } from './ButtonIcons';
 export default function MainButton() {
   return (
     <Link
-      tabindex="0"
+      tabIndex="0"
       to="contacts"
       spy={true}
       smooth={true}
