@@ -3,17 +3,28 @@
 import { useForm } from 'react-hook-form';
 import FormIcon from './FormIcon';
 import toast, { Toaster } from 'react-hot-toast';
+import useFormPersist from 'react-hook-form-persist';
+import FormButton from './FormButton';
 
 export default function ContactForm() {
   const form = useForm();
-  const { register, handleSubmit, reset, formState } = form;
+  const {
+    register,
+    handleSubmit,
+    reset,
+    watch,
+    setValue,
+    formState: { errors },
+  } = form;
 
-  const { errors } = formState;
+  useFormPersist('contactForm', {
+    watch,
+    setValue,
+  });
 
   const onSubmit = (data) => {
     reset();
     toast('Thank you! Your message was sent.');
-    console.log('Form submitted', data);
   };
 
   return (
@@ -31,8 +42,9 @@ export default function ContactForm() {
               type="text"
               id="username"
               {...register('username', {
-                required: {
-                  value: true,
+                required: 'Incorrect name',
+                pattern: {
+                  value: /^[A-Z][a-z]+\s[a-zA-Z\s\.]+/,
                   message: 'Incorrect name',
                 },
               })}
@@ -58,8 +70,9 @@ export default function ContactForm() {
               type="email"
               id="email"
               {...register('email', {
-                required: {
-                  value: true,
+                required: 'Invalid email',
+                pattern: {
+                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                   message: 'Invalid email',
                 },
               })}
@@ -84,17 +97,12 @@ export default function ContactForm() {
           <textarea
             id="text"
             name="user-message"
+            {...register('user-message')}
             className="w-[279px] md:w-[463px] xl:w-[610px] h-[193px] md:h-[221px] xl:h-[174px] text-[13px] xl:text-xl font-extralight leading-6 bg-white bg-opacity-5 resize-none px-2"
           ></textarea>
         </div>
       </div>
-
-      <button
-        type="submit"
-        className="block text-3xl xl:text-[32px] font--medium uppercase ml-auto p-2 hover:bg-white hover:bg-opacity-10 focus:bg-white focus:bg-opacity-10 transition-all duration-300 ease-linear"
-      >
-        Send
-      </button>
+      <FormButton />
       <Toaster />
     </form>
   );
