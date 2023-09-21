@@ -50,10 +50,6 @@ body {
   }
 }
 
-/* .scroll {
-  scroll-behavior: smooth;
-} */
-
 .swiper-pagination {
   width: 188px !important;
   position: absolute;
@@ -73,6 +69,7 @@ body {
 .swiper-pagination-bullet:nth-child(3) {
   height: 30px !important;
 }
+
 .swiper-pagination-bullet-active {
   background-color: transparent !important;
   width: 188px !important;

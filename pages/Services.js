@@ -23,8 +23,6 @@ export default function Services() {
           <Swiper
             spaceBetween={50}
             slidesPerView={1}
-            // onSlideChange={() => console.log('change')}
-            // onSwiper={(swiper) => console.log(swiper)}
             scrollbar={{ draggable: true }}
             modules={[Pagination, A11y, EffectFade]}
             loop={true}
@@ -35,7 +33,7 @@ export default function Services() {
               clickable: true,
               renderBullet: function (index, className) {
                 return (
-                  '<div className="' +
+                  '<div class="' +
                   className +
                   '">' +
                   servicesList[index] +
@@ -54,7 +52,7 @@ export default function Services() {
             {servicesList.map((item, ind) => (
               <div
                 key={ind}
-                className="text-[20px] md:text-[22px] xl:text-[24px] font-medium leading-[17px] md:leading-[18px] xl:leading-[24px] w-[188px] md:w-[204px] xl:w-[254px]"
+                className="text-transparent text-[20px] md:text-[22px] xl:text-[24px] font-medium leading-[17px] md:leading-[18px] xl:leading-[24px] w-[188px] md:w-[204px] xl:w-[254px]"
               >
                 {item}
               </div>
