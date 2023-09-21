@@ -5,7 +5,7 @@ import Logo from '../public/logo.png';
 
 import { useState } from 'react';
 import MobileMenu from './MobileMenu';
-import Navigation from './Navigation';
+import AppBarNavigation from './AppBarNavigation';
 import Link from 'next/link';
 
 export default function AppBar() {
@@ -41,7 +41,7 @@ export default function AppBar() {
               <MobileMenu onClick={toggleMenu} />
             </div>
           )}
-          <Navigation />
+          <AppBarNavigation />
         </nav>
       </div>
     </header>

@@ -1,7 +1,7 @@
 import { Link } from 'react-scroll/modules';
 import { links } from '../data/links';
 
-export default function Navigation() {
+export default function AppBarNavigation() {
   return (
     <ul className="hidden md:flex gap-6 xl:gap-14 text-white cursor-pointer">
       {links.map((link) => (
