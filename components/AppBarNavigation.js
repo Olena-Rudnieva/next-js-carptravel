@@ -8,7 +8,7 @@ export default function AppBarNavigation() {
         <li key={link.id}>
           <Link
             tabIndex="0"
-            className="text-sm font-normal tracking-[1.4px] hover:underline focus:shadow-xl focus:outline-none focus:underline transition-all duration-300 ease-linear"
+            className="text-sm font-normal tracking-[1.4px] hover:underline focus:shadow-xl focus:outline-none focus:underline transition-all duration-500 ease-linear"
             to={link.path}
             spy={true}
             smooth={true}

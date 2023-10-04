@@ -5,8 +5,11 @@ import FormIcon from './FormIcon';
 import toast, { Toaster } from 'react-hot-toast';
 import useFormPersist from 'react-hook-form-persist';
 import FormButton from './FormButton';
+import { ContactsData } from '@/data/contextData/contacts';
 
 export default function ContactForm() {
+  const { input } = ContactsData;
+
   const form = useForm();
   const {
     register,
@@ -36,7 +39,7 @@ export default function ContactForm() {
               htmlFor="username"
               className="text-xs xl:text-xl font-extralight leading-6 tracking-[2.4px] xl:mb-[6px]"
             >
-              Full name
+              {input.name}
             </label>
             <input
               type="text"
@@ -64,7 +67,7 @@ export default function ContactForm() {
               htmlFor="email"
               className="text-xs xl:text-xl font-extralight leading-6 tracking-[2.4px] xl:mb-[6px]"
             >
-              E-mail
+              {input.mail}
             </label>
             <input
               type="email"
@@ -92,7 +95,7 @@ export default function ContactForm() {
             htmlFor="text"
             className="text-xs xl:text-xl font-extralight leading-6 tracking-[2.4px] xl:mb-1"
           >
-            Message
+            {input.message}
           </label>
           <textarea
             id="text"

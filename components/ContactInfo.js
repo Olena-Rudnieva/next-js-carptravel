@@ -1,6 +1,9 @@
 import { socials } from '@/data/socials';
+import { ContactsData } from '@/data/contextData/contacts';
 
 export default function ContactInfo() {
+  const { number, email } = ContactsData;
+
   return (
     <div className="md:flex md:gap-[90px] xl:gap-[0]  xl:flex-col xl:justify-between  ">
       <div>
@@ -11,7 +14,7 @@ export default function ContactInfo() {
                 className="text-sm md:text-base font-normal leading-6"
                 href="tel:+380981234564"
               >
-                +38 (098) 12 34 567
+                {number.first}
               </a>
             </li>
             <li>
@@ -19,12 +22,12 @@ export default function ContactInfo() {
                 className="text-sm md:text-base font-normal leading-6"
                 href="tel:+380731234564"
               >
-                +38 (073) 12 34 567
+                {number.second}
               </a>
             </li>
           </ul>
           <p className="text-xs font-extralight leading-5 ml-5 ">
-            Phone number
+            {number.description}
           </p>
         </div>
 
@@ -33,10 +36,10 @@ export default function ContactInfo() {
             className="text-sm md:text-base font-normal leading-6 md:ml-[34px] xl:ml-0 "
             href="mailto:info@devstudio.com"
           >
-            support@carptravel.com
+            {email.name}
           </a>
           <p className="text-xs font-extralight leading-5 ml-5 mr-[46px]">
-            E-mail
+            {email.description}
           </p>
         </div>
       </div>
@@ -52,7 +55,7 @@ export default function ContactInfo() {
                 href={social.link}
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="text-sm md:text-base font-normal leading-6 hover:underline"
+                className="text-sm md:text-base font-normal leading-6 hover:underline transition-all duration-500 ease-linear"
               >
                 {social.title}
               </a>

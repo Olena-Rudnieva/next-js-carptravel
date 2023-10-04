@@ -6,8 +6,8 @@ import PropTypes from 'prop-types';
 
 export default function MobileMenu({ onClick }) {
   return (
-    <div className="fixed top-0 left-0 z-20 w-screen h-screen bg-[rgb(1,10,5)] bg-opacity-[0.75] backdrop-blur-[25px] max-w-[480px] ">
-      <div className="relative z-30 text-white h-full px-[115px] py-[170px] mx-auto max-w-[320px]">
+    <div className="fixed top-0 left-0 z-20 w-screen h-screen bg-[rgb(1,10,5)] bg-opacity-[0.75] backdrop-blur-[25px]">
+      <div className="relative z-30 text-white h-full px-[115px] py-[170px] mx-auto max-w-[480px]">
         <button
           type="button"
           onClick={onClick}
@@ -21,7 +21,7 @@ export default function MobileMenu({ onClick }) {
               <li key={link.id}>
                 <Link
                   tabIndex="0"
-                  className="text-[18px] font-normal tracking-[1.8px] hover:underline focus:shadow-xl focus:outline-none focus:underline transition-all duration-300 ease-linear"
+                  className="text-[18px] font-normal tracking-[1.8px] hover:underline focus:shadow-xl focus:outline-none focus:underline transition-all duration-500 ease-linear"
                   onClick={onClick}
                   to={link.path}
                   spy={true}

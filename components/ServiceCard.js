@@ -1,12 +1,15 @@
 import Image from 'next/image';
 import PropTypes from 'prop-types';
+import { ServiceData } from '@/data/contextData/services';
 
 export default function ServiceCard({ service }) {
+  const { title } = ServiceData;
+
   return (
     <div className="text-white relative h-[851px] md:h-[621px] xl:h-[779px]">
       <div className="md:flex md:gap-[170px] xl:gap-[162px]">
         <h2 className="text-[40px] md:text-[67px] xl:text-[98px] font-thin leading-[56px] md:leading-[78px] xl:leading-[119px] tracking-[-1.6px] md:tracking-[-2.68px] xl:tracking-[-3.92px] uppercase mb-6 md:mb-9 xl:mb-[23px]">
-          WE <span className="font-medium">OFFER</span>
+          {title.thin} <span className="font-medium">{title.bold}</span>
         </h2>
         <p className="text-[43px] leading-[52px] md:text-[67px] md:leading-[78px] xl:leading-[119px] xl:text-[98px] font-thin text-right mb-4 md:mb-0">
           <span>{service.number}</span>/

@@ -13,7 +13,7 @@ export default function CareerForm() {
       </p>
       <button
         type="submit"
-        className="block text-3xl font-medium uppercase ml-auto p-2 hover:bg-white hover:bg-opacity-10 focus:bg-white focus:bg-opacity-10 transition-all duration-300 ease-linear"
+        className="block text-3xl font-medium uppercase ml-auto p-2 hover:bg-white hover:bg-opacity-10 focus:bg-white focus:bg-opacity-10 transition-all duration-500 ease-linear"
       >
         SEND
       </button>
