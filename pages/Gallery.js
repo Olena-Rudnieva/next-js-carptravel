@@ -16,7 +16,7 @@ export default function Gallery() {
   return (
     <section
       id="gallery"
-      className="py-14 md:py-16 xl:py-20 md:text-center xl:text-start bg-gallery bg-cover text-white h-[801px] md:h-[575px] xl:h-[788px]"
+      className="py-14 md:py-16 xl:py-20 md:text-center xl:text-start bg-gallery bg-cover text-white  md:h-[575px] xl:h-[788px]"
     >
       <div className="container">
         <div className="relative z-10">

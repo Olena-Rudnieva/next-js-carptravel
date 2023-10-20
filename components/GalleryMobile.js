@@ -7,7 +7,7 @@ export default function GalleryMobile() {
       {galleryData.map((picture) => (
         <li key={picture.id}>
           <Image
-            className="w-[280px] h-[187px] mx-auto"
+            className="w-[100%] h-[100%] mx-auto"
             src={picture.src}
             alt={picture.title}
           />

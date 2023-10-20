@@ -34,10 +34,14 @@ export default function ContactForm() {
     <form className="form " onSubmit={handleSubmit(onSubmit)} noValidate>
       <div className="md:flex md:justify-between xl:flex-col mb-4 xl:mb-6">
         <div className="xl:flex xl:gap-5">
-          <div className="mb-6 md:mb-4 xl:mb-5 flex flex-col  ">
+          <div className="mb-6 md:mb-4 xl:mb-5 flex flex-col relative ">
             <label
               htmlFor="username"
-              className="text-xs xl:text-xl font-extralight leading-6 tracking-[2.4px] xl:mb-[6px]"
+              className={
+                errors.username
+                  ? 'text-[#FF5757] text-xs font-extralight leading-6 tracking-[2.4px] xl:mb-[6px]  '
+                  : 'text-xs font-extralight leading-6 tracking-[2.4px] xl:mb-[6px]'
+              }
             >
               {input.name}
             </label>
@@ -52,20 +56,24 @@ export default function ContactForm() {
                 },
               })}
               placeholder="John Smith"
-              className="w-[280px] md:w-[221px] xl:w-[293px] text-[13px] xl:text-xl font-extralight leading-6 bg-white bg-opacity-5 px-2"
+              className=" w-[100%] md:w-[221px] xl:w-[293px] text-[13px] xl:text-xl font-extralight leading-6 bg-white bg-opacity-5 px-2"
             />
             {errors.username && (
-              <p className="text-[#FF5757] text-xs font-extralight leading-6 tracking-[2.4px] text-right flex justify-end items-center">
+              <p className=" absolute right-0 top-[46px] xl:top-[56px] text-[#FF5757] text-xs font-extralight leading-6 tracking-[2.4px] text-right flex justify-end items-center">
                 <FormIcon />
                 {errors.username.message}
               </p>
             )}
           </div>
 
-          <div className="mb-3 md:mb-4 flex flex-col">
+          <div className="mb-3 md:mb-4 flex flex-col relative">
             <label
               htmlFor="email"
-              className="text-xs xl:text-xl font-extralight leading-6 tracking-[2.4px] xl:mb-[6px]"
+              className={
+                errors.username
+                  ? 'text-[#FF5757] text-xs font-extralight leading-6 tracking-[2.4px] xl:mb-[6px] '
+                  : 'text-xs font-extralight leading-6 tracking-[2.4px] xl:mb-[6px]'
+              }
             >
               {input.mail}
             </label>
@@ -80,10 +88,10 @@ export default function ContactForm() {
                 },
               })}
               placeholder="johnsmith@email.com"
-              className="w-[280px] md:w-[221px] xl:w-[293px] text-[13px] xl:text-xl font-extralight leading-6 bg-white bg-opacity-5 px-2"
+              className="w-[100%] md:w-[221px] xl:w-[293px] text-[13px] xl:text-xl font-extralight leading-6 bg-white bg-opacity-5 px-2"
             />
             {errors.email && (
-              <p className="text-[#FF5757] text-xs font-extralight leading-6 tracking-[2.4px] text-right flex justify-end items-center">
+              <p className="absolute right-0 top-[46px] xl:top-[56px] text-[#FF5757] text-xs font-extralight leading-6 tracking-[2.4px] text-right flex justify-end items-center">
                 <FormIcon />
                 {errors.email.message}
               </p>
@@ -101,7 +109,7 @@ export default function ContactForm() {
             id="text"
             name="user-message"
             {...register('user-message')}
-            className="w-[279px] md:w-[463px] xl:w-[610px] h-[193px] md:h-[221px] xl:h-[174px] text-[13px] xl:text-xl font-extralight leading-6 bg-white bg-opacity-5 resize-none px-2"
+            className="w-[100%] md:w-[463px] xl:w-[610px] h-[193px] md:h-[221px] xl:h-[174px] text-[13px] xl:text-xl font-extralight leading-6 bg-white bg-opacity-5 resize-none px-2"
           ></textarea>
         </div>
       </div>
