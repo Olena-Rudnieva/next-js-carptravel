@@ -1,4 +1,5 @@
 import FormIcon from './FormIcon';
+import PropTypes from 'prop-types';
 
 export const FormInput = ({ input, register, errors }) => {
   return (
@@ -34,4 +35,17 @@ export const FormInput = ({ input, register, errors }) => {
       )}
     </>
   );
+};
+
+FormInput.propTypes = {
+  input: PropTypes.shape({
+    label: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+    placeholder: PropTypes.string.isRequired,
+    required: PropTypes.bool.isRequired,
+    error: PropTypes.string.isRequired,
+    pattern: PropTypes.instanceOf(RegExp).isRequired,
+    formData: PropTypes.string.isRequired,
+  }).isRequired,
 };
