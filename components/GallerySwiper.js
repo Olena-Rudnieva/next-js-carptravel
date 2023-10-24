@@ -25,7 +25,7 @@ export default function GallerySwiper({ goPrev, goNext, onInit }) {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        loop
+        loop={true}
         loopPreventsSliding={false}
         loopedSlides={1}
         grabCursor={true}

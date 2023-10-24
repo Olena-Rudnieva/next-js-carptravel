@@ -4,6 +4,8 @@ import { ServiceData } from '@/data/contextData/services';
 
 export default function ServiceCard({ service }) {
   const { title } = ServiceData;
+  // const topClass = 135 + service.callPosition;
+  // const topClass = 100 + service.callPosition;
 
   return (
     <div className="text-white relative h-[851px] md:h-[621px] xl:h-[779px]">
@@ -24,7 +26,10 @@ export default function ServiceCard({ service }) {
           className="mb-3 mx-auto md:mx-0 md:mr-auto md:mb-0 xl:mb-0 w-[280px] h-[213px] md:w-[463px] md:h-[370px] xl:w-[607px] xl:h-[429px]"
         />
         <div>
-          <p className="text-xs font-extralight leading-6 tracking-[2.4px] text-right mb-6 md:absolute md:top-[315px] md:left-[483px] xl:top-[135px] xl:left-[939px]">
+          <p
+            style={{ top: `${service.callPosition}px` }}
+            className={`text-xs font-extralight leading-6 tracking-[2.4px] text-right mb-6 md:absolute md:top-[315px] md:left-[483px] xl:top-0 xl:left-[939px]`}
+          >
             {service.callText}
           </p>
 

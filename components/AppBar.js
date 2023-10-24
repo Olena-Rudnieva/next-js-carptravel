@@ -13,7 +13,7 @@ export default function AppBar() {
   const toggleMenu = () => setMobileMenu(!mobileMenu);
 
   return (
-    <header className="relative z-50 pt-9 md:pt-6 pb-9 md:pb-16 xl:pb-[72px] ">
+    <header className="relative z-50 pt-9 md:pt-6 pb-9 md:pb-16 xl:pb-[72px]  ">
       <div className="container">
         <nav className="flex justify-between items-center ">
           <Link
@@ -47,6 +47,7 @@ export default function AppBar() {
               <MobileMenu onClick={toggleMenu} />
             </div>
           )}
+
           <AppBarNavigation />
         </nav>
       </div>

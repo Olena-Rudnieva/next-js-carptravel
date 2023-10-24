@@ -1,5 +1,6 @@
 'use client';
 
+
 import { Link } from 'react-scroll/modules';
 import { links } from '../data/links';
 import PropTypes from 'prop-types';
@@ -11,10 +12,11 @@ export default function MobileMenu({ onClick }) {
         <button
           type="button"
           onClick={onClick}
-          className="absolute right-[20px] top-[43px] text-[14px] font-normal tracking-[1,4px] uppercase shadow-md transition-all duration-500"
+          className="absolute right-[20px] top-[43px] text-[14px] font-normal tracking-[1,4px] transition duration-500 ease-in-out transform "
         >
           CLOSE
         </button>
+
         <nav>
           <ul className="flex flex-col gap-12  text-center cursor-pointer">
             {links.map((link) => (
