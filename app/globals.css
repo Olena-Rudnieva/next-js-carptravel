@@ -91,7 +91,7 @@ body {
   padding-left: 16px !important;
 }
 
-/* .swiper-pagination-bullet-active::before {
+.swiper-pagination-bullet-active::before {
   content: '';
   display: block;
   width: 6px;
@@ -101,7 +101,7 @@ body {
   position: absolute;
   top: 8px;
   left: 0;
-} */
+}
 
 @media screen and (min-width: 768px) {
   .swiper-pagination {

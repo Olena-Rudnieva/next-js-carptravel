@@ -1,13 +1,12 @@
 'use client';
 
-
 import { Link } from 'react-scroll/modules';
 import { links } from '../data/links';
 import PropTypes from 'prop-types';
 
 export default function MobileMenu({ onClick }) {
   return (
-    <div className="fixed top-0 right-0 bottom-0 left-0 z-20 w-screen h-screen bg-[rgb(1,10,5)] bg-opacity-[0.75] backdrop-blur-[25px]">
+    <div className="fixed top-0 right-0 bottom-0 left-0 z-20 w-screen h-screen bg-[rgb(1,10,5)] bg-opacity-[0.75] bg-blur-25px">
       <div className="relative z-30 text-white h-full px-[20px] py-[170px] mx-auto max-w-[480px] text-center">
         <button
           type="button"

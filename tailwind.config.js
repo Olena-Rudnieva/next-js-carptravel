@@ -21,6 +21,9 @@ module.exports = {
         gallery: 'url(../public/gallery/gallery-bg.jpg)',
         contacts: 'url(../public/contacts/contacts-bg.jpg)',
       },
+      blur: {
+        '25px': '25px',
+      },
     },
   },
 
