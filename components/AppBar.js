@@ -31,7 +31,7 @@ export default function AppBar() {
           </Link>
           <button
             type="button"
-            className={`md:hidden text-[14px] font-normal tracking-[1,4px] uppercase text-white ${
+            className={`md:hidden text-[14px] font-normal tracking-[1.4px] uppercase text-white ${
               mobileMenu ? 'hidden' : 'block'
             }`}
             onClick={toggleMenu}
