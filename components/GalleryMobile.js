@@ -4,7 +4,7 @@ import { galleryData } from '../data/gallery';
 export default function GalleryMobile() {
   return (
     <ul className="flex flex-col gap-5 md:hidden">
-      {galleryData.map((picture) => (
+      {galleryData.slice(0, 3).map((picture) => (
         <li key={picture.id}>
           <Image
             className="w-[100%] h-[100%] mx-auto"

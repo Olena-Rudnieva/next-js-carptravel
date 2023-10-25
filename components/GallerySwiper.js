@@ -63,13 +63,11 @@ export default function GallerySwiper({ goPrev, goNext, onInit }) {
       >
         {galleryData.map((picture) => (
           <SwiperSlide key={picture.id}>
-            <div>
-              <Image
-                src={picture.src}
-                alt={picture.title}
-                className="xl:min-w-[606px]"
-              />
-            </div>
+            <Image
+              src={picture.src}
+              alt={picture.title}
+              className="xl:min-w-[606px]"
+            />
           </SwiperSlide>
         ))}
       </Swiper>
